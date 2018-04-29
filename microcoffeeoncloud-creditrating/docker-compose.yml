@@ -1,0 +1,35 @@
+version: '3'
+services:
+    creditrating:
+        image: microcoffeeoncloud-creditrating:1.0.0-SNAPSHOT
+        ports:
+            - "8083:8083"
+            - "8446:8446"
+        depends_on:
+            - redis
+        environment:
+            - SPRING_PROFILES_ACTIVE=devdocker
+            - SPRING_CLOUD_CONFIG_URI=https://configserver.microcoffee.study:8454
+        domainname: microcoffee.study
+        networks:
+            - microcoffee
+            - configserver
+            - discovery
+    redis:
+        image: redis:4.0.8
+        ports:
+            - "6379:6379"
+        domainname: microcoffee.study
+        networks:
+            microcoffee:
+                aliases:
+                    - redis.microcoffee.study
+
+networks:
+    microcoffee:
+    configserver:
+        external:
+            name: microcoffeeoncloudconfigserver_configserver
+    discovery:
+        external:
+            name: microcoffeeonclouddiscovery_discovery
