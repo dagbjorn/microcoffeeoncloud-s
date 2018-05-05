@@ -1,10 +1,10 @@
-# microcoffeeoncloud - The &micro;Coffee Shop powered by ![Spring Boot 2.0](https://raw.githubusercontent.com/dagbjorn/microcoffeeoncloud/master/docs/images/spring-boot-2.0.png "Spring Boot 2.0") and ![Docker](https://raw.githubusercontent.com/dagbjorn/microcoffeeoncloud/master/docs/images/docker-horizontal.png "Docker")
+# microcoffeeoncloud-s - The Secured &micro;Coffee Shop powered by ![Spring Boot 2.0](https://raw.githubusercontent.com/dagbjorn/microcoffeeoncloud/master/docs/images/spring-boot-2.0.png "Spring Boot 2.0") and ![Docker](https://raw.githubusercontent.com/dagbjorn/microcoffeeoncloud/master/docs/images/docker-horizontal.png "Docker")
 
 ## Revision log
 
 Date | Change
 ---- | -------
-29.04.2018 | Version of microcoffeeoncloud with secured REST endpoints. Markdown file under work.
+29.04.2018 | Version of microcoffeeoncloud with secured REST endpoints. Using Spring Security, Spring Sessions and Redis. Markdown file under work.
 
 
 ## Contents
